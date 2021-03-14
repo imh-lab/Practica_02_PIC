@@ -89,7 +89,7 @@ main:
 		move $t1, $zero # Inicializamos: int i = 0
 		move $s0, $zero #Inicializamos: int unos = 0
 		for:
-			bgt $t1, 34, forFin #Condición invertidad del for i < 32
+			bgt $t1, 32, forFin #Condición invertidad del for i < 32
 			and $t2, $t0, 1		# int lsb = (numero & 1) 
 			add $s0,$s0,$t2	# unos += lsb;
 			srl $t0, $t0, 1 	# numero = numero >> 1
